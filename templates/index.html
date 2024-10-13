@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% include 'header.html' %}
+
+
+    <h1><span id="login">Login</span> / <span id="signup">Signup</span> System</h1>
+    {% if message %}
+    <h2>{{ message }}</h2>
+    <script>message('{{ message }}')</script>
+    {% endif %}
+
+    <a href="/login">Go to Login Page</a><br>
+    <a href="/signup">Go to Signup Page</a><br>
+</body>
+</html>
